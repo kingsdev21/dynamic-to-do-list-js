@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             if (save) {
                const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-               //console.log(typeof(storedTasks));
+
                storedTasks.push(taskText);
                localStorage.setItem("tasks", JSON.stringify(storedTasks));
             }
